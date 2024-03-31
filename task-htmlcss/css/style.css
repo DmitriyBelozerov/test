@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("../fonts/Montserrat-400.woff2") format("woff2"),
+    url("../fonts/Montserrat-500.woff2") format("woff2"),
+    url("../fonts/Montserrat-600.woff2") format("woff2"),
+    url("../fonts/Montserrat-700.woff2") format("woff2"),
+    url("../fonts/Playfair-700.woff2") format("woff2"),
+    url("../fonts/Playfair-800.woff2") format("woff2"),
+}
+
+.body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 75px 30px;
+  background: #D2691E;
+  color: #FFFFFF;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.header__logo {
+  background-image: url(../src/image/logo.svg);
+  height: 50px;
+  width: 275px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header__navLink {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px 0px;
+  margin: 10px 0 0;
+  padding: 0;
+  width: 740px;
+  height: fit-content;
+}
+
+.header__link {
+  padding: 0;
+  margin: 0 0 0 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header__contakts {
+  margin: 0;
+  padding: 0;
+  min-width: 150px;
+  width: 275px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: right;
+  /* letter-spacing: 0.018rem; */
+
+}
+
+@media (max-width:800px) {
+  .header__navLink {
+    display: none;
+  }
+
+  .header__contakts {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width:400px) {
+  .header {
+    padding: 15px;
+  }
+
+  .header__logo {
+    background-image: url(../src/image/logo-mobile.svg);
+    height: 30px;
+    width: 114px;
+    align-self: flex-end;
+  }
+
+  .header__contakts {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    width: 215px;
+    letter-spacing: 0.01rem;
+    text-transform: uppercase;
+  }
+}
