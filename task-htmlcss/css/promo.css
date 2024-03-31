@@ -1,0 +1,51 @@
+.hero {
+  background: url(../src/image/hero_desktop.png);
+  background-repeat: no-repeat;
+  max-height: 640px;
+  max-width: 1440px;
+  padding: 125px 105px 169px 105px;
+  color: #FFF;
+  background-position: center;
+}
+
+.hero__section {
+  height: max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero__title {
+  padding: 0;
+  margin: 0;
+  font-size: 77px;
+  font-family: "Playfair Display", 'Times New Roman', Times, serif;
+  font-weight: 800;
+  line-height: 77px;
+  max-width: 800px;
+}
+
+.hero__paragraph {
+  padding: 0;
+  margin: 0;
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 500px;
+}
+
+.hero__button {
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  width: 240px;
+  background: #D2691E;
+  border: none;
+  box-shadow: none;
+  color: #FFF;
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 19.5px;
+}

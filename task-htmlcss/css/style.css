@@ -1,3 +1,5 @@
+@import url(./normalize.css);;
+
 @font-face {
   font-family: "Montserrat";
   src:
@@ -11,6 +13,7 @@
 
 .body {
   margin: 0;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -20,7 +23,6 @@
   padding: 40px 75px 30px;
   background: #D2691E;
   color: #FFFFFF;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .header__logo {
