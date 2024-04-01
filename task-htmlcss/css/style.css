@@ -12,11 +12,14 @@
 }
 
 .body {
+  max-width: 1440px;
+
   margin: 0;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .header {
+  max-width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
