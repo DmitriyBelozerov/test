@@ -1,0 +1,120 @@
+.events {
+  min-height: 700px;
+  background: #F0EAD6;
+  padding: 60px 105px;
+}
+
+.events__title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', Times, serif;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 42px;
+  color: #513833;
+}
+
+.events__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.event {
+  padding: 25px 20px;
+  width: 350px;
+  height: 365px;
+  background: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event_kavkaz {
+  background: url(../src/image/back1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+.mesto {
+  padding: 0;
+  margin: 0;
+  width: 110px;
+  height: 32px;
+  background: #D2691E;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.mesto__icon {
+  background: url(../src/image/icon-mesto.svg);
+  width: 7.5px;
+  height: 10px;
+
+}
+
+.mesto__name {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.event__section-about {}
+
+.days {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.days__icon {
+  background: url(../src/image/icon-calendar.svg);
+  width: 20px;
+  height: 20px;
+
+}
+
+.days__extent {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.event__title {
+  margin: 20px 0 35px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.rate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.rate__icon {
+  background: url(../src/image/icon-rate\ star\ white.svg);
+  width: 12.42px;
+  height: 11.08px;
+  background-size: cover;
+  background-repeat: round;
+}
+
+.rate__icon:first-child {
+  margin-left: 10px;
+}
