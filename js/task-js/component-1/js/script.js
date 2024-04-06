@@ -1,4 +1,4 @@
-(function() {
+(function () {
   /**
    * Служебная функция для считывания параметров из адресной строки
    * и определения конфигурации компонента
@@ -26,6 +26,9 @@
   };
 
   /* Код компонента пишите ниже */
-
+  const elements = document.querySelectorAll('.accordeon-item-title');
+  elements.forEach(elem => elem.addEventListener('click', () => {
+    elem.parentNode.classList.toggle('accordeon-item--open');
+  }))
 
 })();
