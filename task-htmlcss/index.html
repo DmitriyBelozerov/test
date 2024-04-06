@@ -12,7 +12,7 @@
 </head>
 
 <body class="body">
-  <!-- <header data-test="header" class="header">
+  <header data-test="header" class="header">
     <div class="header__logo"></div>
     <ul class="header__navLink">
       <li class="header__link">Гастротуры</li>
@@ -25,11 +25,11 @@
     <div class="header__contakts">
       8 800 725-32-32
     </div>
-  </header> -->
+  </header>
   <main>
 
 
-    <!-- <section data-test="hero" class="hero">
+    <section data-test="hero" class="hero">
       <div class="hero__section">
         <h1 class="hero__title">Исследуйте вкусы Кавказа</h1>
         <p class="hero__paragraph">
@@ -37,19 +37,17 @@
           традиционные блюда. </p>
         <button type="button" class="hero__button">Подробнее о курсе</button>
       </div>
-    </section> -->
+    </section>
 
 
     <section data-test="events" class="events">
       <h2 class="events__title">Предстоящие события</h2>
       <ul class="events__list">
         <li class="event event_kavkaz">
-
           <div class="mesto">
             <div class="mesto__icon"></div>
             <p class="mesto__name">Кавказ</p>
           </div>
-
           <div class="event__section-about">
             <div class="days">
               <div class="days__icon"></div>
@@ -58,20 +56,64 @@
             <h3 class="event__title">Гастрономическое путешествие вокруг Кавказа</h3>
             <div class="rate">
               Сложность:
+              <div class="rate__icon rate__icon_active"></div>
+              <div class="rate__icon rate__icon_active"></div>
+              <div class="rate__icon rate__icon_active"></div>
               <div class="rate__icon"></div>
               <div class="rate__icon"></div>
-
-              <div class="rate__icon"></div>
-
             </div>
           </div>
-
         </li>
-        <li class="event"></li>
-        <li class="event"></li>
+
+        <li class="event event_altay">
+          <div class="mesto">
+            <div class="mesto__icon"></div>
+            <p class="mesto__name">Алтай</p>
+          </div>
+          <div class="event__section-about">
+            <div class="days">
+              <div class="days__icon"></div>
+              <span class="days__extent">13 дней</span>
+            </div>
+            <h3 class="event__title">Путь к мастерству в приготовлении блюд Алтая</h3>
+            <div class="rate">
+              Сложность:
+              <div class="rate__icon rate__icon_active"></div>
+              <div class="rate__icon rate__icon_active"></div>
+              <div class="rate__icon"></div>
+              <div class="rate__icon"></div>
+              <div class="rate__icon"></div>
+            </div>
+          </div>
+        </li>
+
+        <li class="event event_adygeya">
+          <div class="mesto">
+            <div class="mesto__icon"></div>
+            <p class="mesto__name">Кавказ</p>
+          </div>
+          <div class="event__section-about">
+            <div class="days">
+              <div class="days__icon"></div>
+              <span class="days__extent">6 дней</span>
+            </div>
+            <h3 class="event__title">От горных трав до морских деликатесов</h3>
+            <div class="rate">
+              Сложность:
+              <div class="rate__icon rate__icon_active"></div>
+              <div class="rate__icon rate__icon_active"></div>
+              <div class="rate__icon rate__icon_active"></div>
+              <div class="rate__icon rate__icon_active"></div>
+              <div class="rate__icon"></div>
+            </div>
+          </div>
+        </li>
 
       </ul>
-      <button type="button"></button>
+      <button type="button" class="events__button">
+        <p> ПОКАЗАТЬ ВСЕ КУРСЫ </p>
+        <span class="events__button-icon"></span>
+      </button>
     </section>
   </main>
 </body>

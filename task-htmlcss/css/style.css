@@ -12,9 +12,14 @@
     url("../fonts/Playfair-800.woff2") format("woff2"),
 }
 
+html {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .body {
   max-width: 1440px;
-
   margin: 0;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
