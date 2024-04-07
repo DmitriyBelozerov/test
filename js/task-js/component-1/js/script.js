@@ -26,14 +26,38 @@
   };
 
   /* Код компонента пишите ниже */
+  let openItems = [];
 
   const elements = document.querySelectorAll('.accordeon-item-title');
   elements.forEach(elem => elem.addEventListener('click', () => {
-    elem.parentNode.classList.toggle('accordeon-item--open');
-    elements.forEach(el => {
-      if (el !== elem) {
-        el.parentNode.classList.remove('accordeon-item--open');
+    if (settings.tabsLimit === 0) {
+      elem.parentNode.classList.toggle('accordeon-item--open');
+    } else if (settings.tabsLimit === 1) {
+      elements.forEach(el => {
+        if (el !== elem) {
+          el.parentNode.classList.remove('accordeon-item--open');
+        }
+      });
+    } else if (settings.tabsLimit > 1) {
+      // elem.parentNode.classList.toggle('accordeon-item--open');
+      if (!elem.parentNode.classList.contains('accordeon-item--open')) {
+        openItems.unshift(elem);
+      } else {
+        openItems = openItems.filter(item => item !== elem);
+        elem.parentNode.classList.remove('accordeon-item--open');
+
       }
-    })
-  }))
+      if (openItems.length > 3) {
+        openItems[3].parentNode.classList.remove('accordeon-item--open');
+        openItems.splice(3);
+      }
+      openItems.forEach(el => {
+        el.parentNode.classList.add('accordeon-item--open');
+
+      });
+    }
+
+
+
+  }));
 })();
