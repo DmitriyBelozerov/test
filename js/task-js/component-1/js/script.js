@@ -26,9 +26,14 @@
   };
 
   /* Код компонента пишите ниже */
+
   const elements = document.querySelectorAll('.accordeon-item-title');
   elements.forEach(elem => elem.addEventListener('click', () => {
     elem.parentNode.classList.toggle('accordeon-item--open');
+    elements.forEach(el => {
+      if (el !== elem) {
+        el.parentNode.classList.remove('accordeon-item--open');
+      }
+    })
   }))
-
 })();
