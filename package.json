@@ -44,5 +44,8 @@
     "lint:styles": "stylelint task-htmlcss/**/*.css",
     "lint:scripts": "eslint task-js/**/*.js",
     "lint": "npm run lint:spaces && npm run lint:html && npm run lint:styles && npm run lint:scripts"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
   }
 }
