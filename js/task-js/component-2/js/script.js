@@ -35,10 +35,37 @@
       inputDayEnd.classList.add('field-error');
       inputDayEnd.classList.remove('field-correct');
     }
+
+    const roomType = document.querySelector('input[name="room-type"]:checked').value;
+
+
+    const adults = document.querySelector('#adults');
+    const children = document.querySelector('#children');
+    const adultsValue = adults.value;
+    const childrenValue = children.value;
+
+    function correctResidents() {
+      adults.classList.add('field-correct');
+      adults.classList.remove('field-error');
+      children.classList.add('field-correct');
+      children.classList.remove('field-error');
+    }
+
+    function errorResidents() {
+      adults.classList.add('field-error');
+      adults.classList.remove('field-correct');
+      children.classList.add('field-error');
+      children.classList.remove('field-correct');
+    }
+
+    console.log(childrenValue);
+
+    if (roomType === 'single' && adultsValue === '1' && (['0', '1', ''].includes(childrenValue))) {
+      correctResidents();
+    } else {
+      errorResidents();
+    }
+
   });
-
-
-
-
 
 })();
