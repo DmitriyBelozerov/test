@@ -4,9 +4,7 @@
     {
       "pair": {
         "reference": "..\\..\\test-example\\reference\\header-desktop.png",
-        "referenceLog": "..\\..\\test-example\\reference\\header-desktop.log.json",
         "test": "..\\bitmaps_test\\20240414-194549\\header-desktop.png",
-        "testLog": "..\\bitmaps_test\\20240414-194549\\header-desktop.log.json",
         "selector": "[data-test=\"header\"]",
         "fileName": "header-desktop.png",
         "label": "header",
@@ -31,9 +29,7 @@
     {
       "pair": {
         "reference": "..\\..\\test-example\\reference\\main-desktop.png",
-        "referenceLog": "..\\..\\test-example\\reference\\main-desktop.log.json",
         "test": "..\\bitmaps_test\\20240414-194549\\main-desktop.png",
-        "testLog": "..\\bitmaps_test\\20240414-194549\\main-desktop.log.json",
         "selector": "[data-test=\"main\"]",
         "fileName": "main-desktop.png",
         "label": "main",
@@ -58,9 +54,7 @@
     {
       "pair": {
         "reference": "..\\..\\test-example\\reference\\footer-desktop.png",
-        "referenceLog": "..\\..\\test-example\\reference\\footer-desktop.log.json",
         "test": "..\\bitmaps_test\\20240414-194549\\footer-desktop.png",
-        "testLog": "..\\bitmaps_test\\20240414-194549\\footer-desktop.log.json",
         "selector": "[data-test=\"footer\"]",
         "fileName": "footer-desktop.png",
         "label": "footer",

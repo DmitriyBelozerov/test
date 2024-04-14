@@ -58,9 +58,11 @@
       children.classList.remove('field-correct');
     }
 
-    console.log(childrenValue);
-
     if (roomType === 'single' && adultsValue === '1' && (['0', '1', ''].includes(childrenValue))) {
+      correctResidents();
+    } else if (roomType === 'family' && adultsValue > '1' && (childrenValue <= adultsValue && childrenValue > '0')) {
+      correctResidents();
+    } else if (roomType === 'double' && adultsValue === '2' && (['0', ''].includes(childrenValue))) {
       correctResidents();
     } else {
       errorResidents();
